@@ -12,15 +12,15 @@ const AFF_PATH = path.join(__dirname, '../../affidabilita.csv');
 
 const risposteCorrette = {
   "Grenoble 1": "Grenoble Peggio",
-  "Grenoble 2": "Grenoble Molto Peggio",
-  "Grenoble 3": "Grenoble Peggio",
+  "Grenoble 2": "Grenoble Peggio",
+  "Grenoble 3": "Grenoble Molto Peggio",
   "Grenoble 4": "Grenoble Peggio",
-  "Grenoble 5": "Grenoble Molto Peggio",
+  "Grenoble 5": "Grenoble Peggio",
   "Grenoble 6": "Grenoble Peggio",
   "Grenoble 7": "Grenoble Peggio",
-  "Grenoble 8": "Grenoble Molto Peggio",
+  "Grenoble 8": "Grenoble Peggio",
   "Grenoble 9": "Grenoble Peggio",
-  "Grenoble 10": "Grenoble Peggio",
+  "Grenoble 10": "Grenoble Peggio"
 };
 
 const valutazioni = {
