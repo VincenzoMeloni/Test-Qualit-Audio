@@ -11,16 +11,11 @@ const INPUT_CSV = path.join(__dirname, '../../valutazioni.csv');
 const AFF_PATH = path.join(__dirname, '../../affidabilita.csv');
 
 const risposteCorrette = {
-  "Grenoble 1": "Grenoble Peggio",
-  "Grenoble 2": "Grenoble Peggio",
-  "Grenoble 3": "Grenoble Molto Peggio",
-  "Grenoble 4": "Grenoble Peggio",
-  "Grenoble 5": "Grenoble Peggio",
-  "Grenoble 6": "Grenoble Peggio",
-  "Grenoble 7": "Grenoble Peggio",
-  "Grenoble 8": "Grenoble Peggio",
-  "Grenoble 9": "Grenoble Peggio",
-  "Grenoble 10": "Grenoble Peggio"
+  "Grenoble Danneggiata 1": "Reale Molto Meglio",
+  "Grenoble Danneggiata 2": "Reale Molto Meglio",
+  "Grenoble Danneggiata 3": "Reale Molto Meglio",
+  "Grenoble Danneggiata 4": "Reale Molto Meglio",
+  "Grenoble Danneggiata 5": "Reale Molto Meglio"
 };
 
 const valutazioni = {
@@ -28,12 +23,12 @@ const valutazioni = {
   "Grenoble Peggio": 2,
   "Uguale": 3,
   "Grenoble Meglio": 4,
-  "Grenoble Molto Meglio": 5,
+  "Grenoble Molto Meglio": 5
 };
 
-async function leggiCSV(PATH){
+async function leggiCSV(PATH) {
   if (!fs.existsSync(PATH)) return [];
-  let records = [];
+  const records = [];
   return new Promise((resolve, reject) => {
     fs.createReadStream(PATH)
       .pipe(csv())
@@ -41,114 +36,101 @@ async function leggiCSV(PATH){
       .on('end', () => resolve(records))
       .on('error', reject);
   });
-};
+}
 
-function filtraConfrontiGrenobleUnici(records) {
-  const confrontiPerUtente = {};
+function processaDati(records, risposteCorrette, valutazioni) {
+  const utenti = {};
 
   for (const row of records) {
     const { Utente, A, B } = row;
 
-    let grenobleSample;
-
-    if (A.startsWith('Grenoble') && B.startsWith('ElevenLabs')) {
-      grenobleSample = A;
-    } else if (B.startsWith('Grenoble') && A.startsWith('ElevenLabs')) {
-      grenobleSample = B;
+    if (!utenti[Utente]) {
+      utenti[Utente] = {
+        controllo: [],
+        valutazioni: []
+      };
     }
 
-    if (grenobleSample) {
-      if (!confrontiPerUtente[Utente]) {
-        confrontiPerUtente[Utente] = new Map();
-      }
-
-      if (!confrontiPerUtente[Utente].has(grenobleSample)) {
-        confrontiPerUtente[Utente].set(grenobleSample, row);
-      }
+    if (
+      (A.startsWith('Grenoble Danneggiata') && B.startsWith('Reale')) ||
+      (B.startsWith('Grenoble Danneggiata') && A.startsWith('Reale'))
+    ) {
+      utenti[Utente].controllo.push(row);
     }
-  }
 
-  const validi = {};
-  for (const [utente, mappaConfronti] of Object.entries(confrontiPerUtente)) {
-    if (mappaConfronti.size >= 10) {
-      validi[utente] = Array.from(mappaConfronti.values()).slice(0, 10);
-    }
-  }
-
-  return validi;
-}
-
-function calcolaAffidabilita(confrontiUtente, risposteCorrette, valutazioni) {
-  const affidabilita = [];
-
-  for (const [utente, confronti] of Object.entries(confrontiUtente)) {
-    let corrette = 0;
-    let punteggioTotale = 0;
-    
-    for (const row of confronti) {
-      const { A, B, Scelta } = row;
+    else if (
+      (A.startsWith('Grenoble') && B.startsWith('ElevenLabs')) ||
+      (B.startsWith('Grenoble') && A.startsWith('ElevenLabs'))
+    ) {
       const grenobleSample = A.startsWith('Grenoble') ? A : B;
+      if (!grenobleSample.includes('Danneggiata')) {
+        utenti[Utente].valutazioni.push(row);
+      }
+    }
+  }
+
+  const risultati = [];
+  const utentiElaborati = new Set();
+
+  for (const [utente, dati] of Object.entries(utenti)) {
+    if(utentiElaborati.has(utente)) continue;
+    const { controllo, valutazioni: valutazioniUtente } = dati;
+    if (controllo.length < 5 || valutazioniUtente.length < 10) continue;
+
+    let corrette = 0;
+    for (const row of controllo) {
+      const { A, B, Scelta } = row;
+      const sample = A.startsWith('Grenoble Danneggiata') ? A : B;
       const sceltaUtente = Scelta.trim();
-      const sceltaCorretta = risposteCorrette[grenobleSample]?.trim();
+      const corretta = risposteCorrette[sample]?.trim();
+      if (sceltaUtente === corretta) corrette++;
+    }
 
-      if (!sceltaCorretta) {
-        continue;
-      }
+    const percentuale = ((corrette / controllo.length) * 100).toFixed(2);
+    if (corrette < 4) continue;
 
-      if (sceltaUtente === sceltaCorretta) {
-        corrette++;
-      }
+    let totale = 0;
+    let conteggio = 0;
 
-      const valutazioneCorretta = valutazioni[sceltaCorretta];
-      if (valutazioneCorretta !== undefined && sceltaUtente === sceltaCorretta) {
-        punteggioTotale += valutazioneCorretta;
+    for (const row of valutazioniUtente.slice(0, 10)) {
+      const voto = valutazioni[row.Scelta.trim()];
+      if (voto !== undefined) {
+        totale += voto;
+        conteggio++;
       }
     }
 
-    const affidabilitaPercentuale = ((corrette / 10) * 100).toFixed(2);
-    const mediaPunteggio = corrette > 0 ? (punteggioTotale / corrette).toFixed(2) : '0.00';
+    if (conteggio < 10) continue;
 
-    affidabilita.push({
+    const media = (totale / conteggio).toFixed(2);
+
+    risultati.push({
       utente,
-      corrette_su_10: corrette,
-      affidabilita: affidabilitaPercentuale,
-      media: mediaPunteggio,
+      corrette_su_5: corrette,
+      affidabilita: percentuale,
+      media
     });
+    utentiElaborati.add(utente);
   }
-  return affidabilita;
+
+  return risultati;
 }
 
 export async function valAffidabilita() {
   try {
     const records = await leggiCSV(INPUT_CSV);
-    const confrontiValidi = filtraConfrontiGrenobleUnici(records);
-    const haUtenteValido = Object.values(confrontiValidi).some(confronti => confronti.length >= 10);
+    const risultati = processaDati(records, risposteCorrette, valutazioni);
 
-    if (!haUtenteValido) {
-      return;
-    }
-
-    const risultati = calcolaAffidabilita(confrontiValidi, risposteCorrette, valutazioni);
-    const risultatiFiltrati = risultati.filter(risultato => parseFloat(risultato.affidabilita) >= 75);
-
-    if (risultatiFiltrati.length === 0) {
-      return;
-    }
+    if (risultati.length === 0) return;
 
     const esistenti = await leggiCSV(AFF_PATH);
     const utentiEsistenti = new Set(esistenti.map(r => r.utente));
-    const nuoviSenzaDuplicati = risultatiFiltrati.filter(r => !utentiEsistenti.has(r.utente));
+    const nuovi = risultati.filter(r => !utentiEsistenti.has(r.utente));
 
-    if (nuoviSenzaDuplicati.length > 0) {
-      const risultatiFinali = [...esistenti, ...nuoviSenzaDuplicati];
-      await writeAffidabilitaCSV(nuoviSenzaDuplicati);
+    if (nuovi.length > 0) {
+      await writeAffidabilitaCSV(nuovi);
     }
-
   } catch (err) {
-    console.error('Errore durante il calcolo dell\'affidabilità:', err);
+    console.error("Errore durante il calcolo dell'affidabilità:", err);
   }
 }
-
-
-
-

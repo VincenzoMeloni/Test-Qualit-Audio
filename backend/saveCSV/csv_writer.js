@@ -8,14 +8,16 @@ const __dirname = path.dirname(__filename);
 
 const VAL_PATH = path.join(__dirname, '../../valutazioni.csv');
 const AFF_PATH = path.join(__dirname, '../../affidabilita.csv');
+const USER_PATH = path.join(__dirname, '../../partecipanti.csv');
 
 const valExists = fs.existsSync(VAL_PATH);
 const affExists = fs.existsSync(AFF_PATH);
+const userExists = fs.existsSync(USER_PATH);
 
 const valCsvWriter = createObjectCsvWriter({
   path: VAL_PATH,
   header: [
-    { id: 'utente', title: 'Utente' },
+    { id: 'utente', title: 'utente' },
     { id: 'A', title: 'A' },
     { id: 'B', title: 'B' },
     { id: 'scelta', title: 'Scelta' }
@@ -40,8 +42,8 @@ export const writeValutazioniCSV = async (data) => {
 const affCsvWriter = createObjectCsvWriter({
   path: AFF_PATH,
   header: [
-    { id: 'utente', title: 'utente' },
-    { id: 'corrette_su_10', title: 'corrette_su_10' },
+    { id: 'utente', title: 'Utente' },
+    { id: 'corrette_su_5', title: 'corrette_su_5' },
     { id: 'affidabilita', title: 'affidabilita(%)' },
     { id: 'media', title: 'media' }
   ],
@@ -68,3 +70,29 @@ function aggiungiNewLine(PATH){
     fs.appendFileSync(PATH,'\n','utf-8');
   }
 }
+
+const userCsvWriter = createObjectCsvWriter({
+  path: USER_PATH,
+  header: [
+    { id: 'utente', title:'Utente'},
+    { id: 'regioneNascita', title: 'Regione_Nascita' },
+    { id: 'regioneResidenza', title: 'Regione_Residenza' },
+    { id: 'genere', title: 'Genere' },
+    { id: 'titoloStudio', title: 'Titolo_Studio' }
+  ],
+  append: userExists,
+  writeHead: !userExists,
+  quoteColumns: true,
+  recordDelimiter: '\n'
+});
+
+export const writeUserDataCSV = async (data) => {
+  try {
+    await userCsvWriter.writeRecords([data]);
+    aggiungiNewLine(USER_PATH);
+    console.log("Dati utente salvati con successo!");
+  } catch (err) {
+    console.error('Errore durante il salvataggio di userData.csv:', err);
+    throw new Error('Errore durante il salvataggio di userData.csv');
+  }
+};

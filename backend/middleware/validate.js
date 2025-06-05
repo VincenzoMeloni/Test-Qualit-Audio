@@ -7,3 +7,15 @@ export const Validazione = (req, res, next) => {
   
     next();
 };
+
+
+export const ValidaForm = (req,res,next) =>{
+  const { utente, regioneNascita, regioneResidenza, genere, titoloStudio } = req.body;
+
+  if ( !utente || !regioneNascita || !regioneResidenza || !genere || !titoloStudio) {
+    return res.status(400).json({ message: 'Dati incompleti' });
+  }
+
+  next();
+
+}

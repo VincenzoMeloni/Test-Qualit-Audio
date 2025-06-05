@@ -1,0 +1,62 @@
+body {
+    background: url('https://it.vidnoz.com/img/sound-test/sound_test_bg.svg');
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main > h1 {
+    margin-top: 30px;
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#rettangolo{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color:#B0E0E6;
+    color: black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+
+
+.form-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color:darkturquoise;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.regioneN,.regioneR,.genere{
+    margin-bottom: 30px;
+}
+
+#nextBtn{
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
