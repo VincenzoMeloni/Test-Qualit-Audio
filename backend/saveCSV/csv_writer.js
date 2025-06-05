@@ -17,7 +17,7 @@ const userExists = fs.existsSync(USER_PATH);
 const valCsvWriter = createObjectCsvWriter({
   path: VAL_PATH,
   header: [
-    { id: 'utente', title: 'utente' },
+    { id: 'utente', title: 'Utente' },
     { id: 'A', title: 'A' },
     { id: 'B', title: 'B' },
     { id: 'scelta', title: 'Scelta' }
@@ -45,10 +45,10 @@ const affCsvWriter = createObjectCsvWriter({
     { id: 'utente', title: 'Utente' },
     { id: 'corrette_su_5', title: 'corrette_su_5' },
     { id: 'affidabilita', title: 'affidabilita(%)' },
-    { id: 'media', title: 'media' }
+    { id: 'media', title: 'Score_Medio_Grenoble' }
   ],
-  append: affExists,
-  writeHead: !affExists,
+  append: false,
+  writeHead: true,
   quoteColumns: true,
   recordDelimiter: '\n'
 });

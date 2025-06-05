@@ -44,6 +44,8 @@ function processaDati(records, risposteCorrette, valutazioni) {
   for (const row of records) {
     const { Utente, A, B } = row;
 
+    if (!Utente) continue;
+
     if (!utenti[Utente]) {
       utenti[Utente] = {
         controllo: [],
@@ -73,7 +75,7 @@ function processaDati(records, risposteCorrette, valutazioni) {
   const utentiElaborati = new Set();
 
   for (const [utente, dati] of Object.entries(utenti)) {
-    if(utentiElaborati.has(utente)) continue;
+    if (utentiElaborati.has(utente)) continue;
     const { controllo, valutazioni: valutazioniUtente } = dati;
     if (controllo.length < 5 || valutazioniUtente.length < 10) continue;
 
@@ -110,27 +112,37 @@ function processaDati(records, risposteCorrette, valutazioni) {
       affidabilita: percentuale,
       media
     });
+
     utentiElaborati.add(utente);
   }
 
   return risultati;
 }
 
+
 export async function valAffidabilita() {
   try {
-    const records = await leggiCSV(INPUT_CSV);
-    const risultati = processaDati(records, risposteCorrette, valutazioni);
-
-    if (risultati.length === 0) return;
-
     const esistenti = await leggiCSV(AFF_PATH);
-    const utentiEsistenti = new Set(esistenti.map(r => r.utente));
-    const nuovi = risultati.filter(r => !utentiEsistenti.has(r.utente));
+    const utentiEsistenti = new Set(esistenti.map(r => r.Utente));
 
-    if (nuovi.length > 0) {
-      await writeAffidabilitaCSV(nuovi);
-    }
+    const records = (await leggiCSV(INPUT_CSV))
+      .filter(record => record.Utente && !utentiEsistenti.has(record.Utente));
+
+    if (records.length === 0) return;
+
+    const nuoviRisultati = processaDati(records, risposteCorrette, valutazioni);
+
+    if (nuoviRisultati.length === 0) return;
+
+    const tuttiDati = [...esistenti, ...nuoviRisultati];
+    const datiUnici = [...new Map(tuttiDati.map(item => [item.utente, item])).values()];
+
+    await writeAffidabilitaCSV(datiUnici);
+
   } catch (err) {
     console.error("Errore durante il calcolo dell'affidabilità:", err);
   }
 }
+
+
+
