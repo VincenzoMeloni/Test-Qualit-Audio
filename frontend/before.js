@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (response.ok) {
         window.location.href = '/index.html';
       } else {
-        alert('Errore nel salvataggio dei dati, riprova.');
+        alert('Errore nel salvataggio dei dati! Riprova.');
       }
     } catch (error) {
       alert('Errore di rete o server: ' + error.message);

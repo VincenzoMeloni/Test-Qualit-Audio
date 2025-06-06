@@ -59,7 +59,6 @@ function processaDati(records, risposteCorrette, valutazioni) {
     ) {
       utenti[Utente].controllo.push(row);
     }
-
     else if (
       (A.startsWith('Grenoble') && B.startsWith('ElevenLabs')) ||
       (B.startsWith('Grenoble') && A.startsWith('ElevenLabs'))
@@ -119,30 +118,19 @@ function processaDati(records, risposteCorrette, valutazioni) {
   return risultati;
 }
 
-
 export async function valAffidabilita() {
   try {
     const esistenti = await leggiCSV(AFF_PATH);
     const utentiEsistenti = new Set(esistenti.map(r => r.Utente));
 
-    const records = (await leggiCSV(INPUT_CSV))
-      .filter(record => record.Utente && !utentiEsistenti.has(record.Utente));
+    const records = await leggiCSV(INPUT_CSV);
+    const nuoviRisultati = processaDati(records, risposteCorrette, valutazioni)
+      .filter(risultato => !utentiEsistenti.has(risultato.utente));
 
-    if (records.length === 0) return;
-
-    const nuoviRisultati = processaDati(records, risposteCorrette, valutazioni);
-
-    if (nuoviRisultati.length === 0) return;
-
-    const tuttiDati = [...esistenti, ...nuoviRisultati];
-    const datiUnici = [...new Map(tuttiDati.map(item => [item.utente, item])).values()];
-
-    await writeAffidabilitaCSV(datiUnici);
-
+    if (nuoviRisultati.length > 0) {
+      await writeAffidabilitaCSV(nuoviRisultati);
+    }
   } catch (err) {
     console.error("Errore durante il calcolo dell'affidabilità:", err);
   }
 }
-
-
-

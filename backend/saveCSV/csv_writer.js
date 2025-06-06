@@ -47,8 +47,8 @@ const affCsvWriter = createObjectCsvWriter({
     { id: 'affidabilita', title: 'affidabilita(%)' },
     { id: 'media', title: 'Score_Medio_Grenoble' }
   ],
-  append: false,
-  writeHead: true,
+  append: affExists,
+  writeHead: !affExists,
   quoteColumns: true,
   recordDelimiter: '\n'
 });

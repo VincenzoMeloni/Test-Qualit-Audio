@@ -1,8 +1,3 @@
-const radioButtons = document.querySelectorAll('input[name="choice"]');
-const submitButton = document.getElementById('bottone-upload');
-const startBtn = document.getElementById('startBtn');
-const form = document.getElementById('form');
-
 const audioFiles = [
     /* ELEVEN LABS VS GRENOBLE (alternati) */
     { a: '/audio/1_EL.mp3', aLabel: 'ElevenLabs 1', b: '/audio/1_GR.mp3', bLabel: 'Grenoble 1' },
@@ -39,40 +34,35 @@ const audioFiles = [
 
 ];
 
-function changeChoice(A,B,sceltaP){
-    let scelta = sceltaP;
-    if (A.startsWith('Grenoble Danneggiata') && B.startsWith('Reale')) {
-        switch(scelta) {
-            case "B molto meglio":
-                scelta = "Reale Molto Meglio";
-                break;
-        }
-    }else if(A.startsWith('Reale') && B.startsWith('Grenoble Danneggiata')){
-        switch(scelta){
-            case "A molto meglio":
-            scelta = "Reale Molto Meglio";
-            break;
+const radioButtons = document.querySelectorAll('input[name="choice"]');
+const submitButton = document.getElementById('bottone-upload');
+const startBtn = document.getElementById('startBtn');
+const form = document.getElementById('form');
+let tempAudios = [...audioFiles];
+let audioCaricato = false;
+let currentPair = {};
 
-        }
+function getRandomPair() {
+    if (tempAudios.length === 0) {
+        tempAudios = [...audioFiles];
     }
-    return scelta;
+
+    const randomIndex = Math.floor(Math.random() * tempAudios.length);
+    return tempAudios.splice(randomIndex, 1)[0];
 }
 
-let remainingPairs = [...audioFiles];
-let currentPair = null;
-let audioCaricato = false;
+function checkSelection() {
+    const selectedRadio = document.querySelector('input[name="choice"]:checked');
+    submitButton.disabled = !(selectedRadio && audioCaricato);
+}
 
-function showRandomAudio() {
+function showRandomAudio(){
     const messageBox = document.getElementById('messageBox');
     messageBox.textContent = '';
     messageBox.style.display = 'none';
 
-    if (remainingPairs.length === 0) {
-        remainingPairs = [...audioFiles];
-    }
+    currentPair = getRandomPair();
 
-    const randomIndex = Math.floor(Math.random() * remainingPairs.length);
-    currentPair = remainingPairs.splice(randomIndex, 1)[0];
     audioCaricato = true;
     submitButton.disabled = false;
 
@@ -99,16 +89,11 @@ function showRandomAudio() {
 
 startBtn.addEventListener('click', showRandomAudio);
 
-function checkSelection() {
-    const selectedRadio = document.querySelector('input[name="choice"]:checked');
-    submitButton.disabled = !(selectedRadio && audioCaricato);
-}
-
 radioButtons.forEach(radio => {
     radio.addEventListener('change', checkSelection);
 });
 
-checkSelection();
+document.addEventListener('DOMContentLoaded', checkSelection);
 
 function showMessage(message, type) {
     const box = document.getElementById('messageBox');
@@ -117,17 +102,22 @@ function showMessage(message, type) {
     box.style.display = 'block';
 }
 
+function checkUser(id){
+    if(typeof id === "undefined" || id === null){
+        showMessage('Bisogna compilare il form prima di inviare una valutazione!', 'error');
+        return false;
+    }
+    return true;
+}
+
 form.addEventListener('submit', async function (e) {
     e.preventDefault();
 
     let id = localStorage.getItem('utenteId');
 
-    if(typeof id === "undefined" || id === null){
-        showMessage('Bisogna compilare il form prima di inviare una valutazione!', 'error');
-        return;
-    }
+    if(!checkUser(id)) return;
 
-    const selectedRadio = document.querySelector('input[name="choice"]:checked');
+    let selectedRadio = document.querySelector('input[name="choice"]:checked');
     if (!selectedRadio) {
         showMessage('Seleziona un’opzione prima di valutare.', 'error');
         return;
@@ -141,27 +131,15 @@ form.addEventListener('submit', async function (e) {
     submitButton.disabled = true;
     startBtn.disabled = true;
 
-    console.log('aLabel:', currentPair.aLabel);
-    console.log('bLabel:', currentPair.bLabel);
-
-    if (
-        (currentPair.aLabel.startsWith('Grenoble') && currentPair.bLabel.startsWith('ElevenLabs')) ||
-        (currentPair.aLabel.startsWith('ElevenLabs') && currentPair.bLabel.startsWith('Grenoble'))
-    )selectedRadio.value = cambiaScelta(currentPair.aLabel,currentPair.bLabel,selectedRadio.value);
-    else if (
-        currentPair.aLabel.includes('Grenoble Danneggiata') && currentPair.bLabel.includes('Reale') ||
-        currentPair.aLabel.includes('Reale') && currentPair.bLabel.includes('Grenoble Danneggiata')
-    ) {
-        selectedRadio.value = changeChoice(currentPair.aLabel, currentPair.bLabel, selectedRadio.value);
-    }
+    let sceltaUtente = selectedRadio.value;
+    let sceltaN = normalizzaScelta(currentPair.aLabel,currentPair.bLabel,sceltaUtente);
 
     const payload = {
-        utente: localStorage.getItem('utenteId'),
+        utente: id,
         A: currentPair.aLabel,
         B: currentPair.bLabel,
-        scelta: selectedRadio.value
+        scelta: sceltaN
     };
-
     try {
         const res = await fetch('/submit', {
             method: 'POST',
@@ -184,39 +162,57 @@ form.addEventListener('submit', async function (e) {
 });
 
 
-function cambiaScelta(A, B, sceltaP) {
-    let scelta = sceltaP;
-    
+function normalizzaScelta(A, B, scelta) {
+    let sceltaP = scelta
     if (A.startsWith('Grenoble') && B.startsWith('ElevenLabs')) {
         switch(scelta) {
             case "B molto meglio":
-                scelta = "Grenoble Molto Peggio";
-                break;
-            case "B meglio":
-                scelta = "Grenoble Peggio";
-                break;
+                 sceltaP = "Grenoble Molto Peggio";
+                 break;
+            case "B meglio": 
+                 sceltaP = "Grenoble Peggio";
+                 break;
             case "A meglio":
-                scelta = "Grenoble Meglio";
-                break;
+                 sceltaP = "Grenoble Meglio";
+                 break;
             case "A molto meglio":
-                scelta = "Grenoble Molto Meglio";
-                break;
+                 sceltaP = "Grenoble Molto Meglio";
+                 break;
         }
     } else if (A.startsWith('ElevenLabs') && B.startsWith('Grenoble')) {
         switch(scelta) {
             case "A molto meglio":
-                scelta = "Grenoble Molto Peggio";
-                break;
+                 sceltaP = "Grenoble Molto Peggio";
+                 break;
             case "A meglio":
-                scelta = "Grenoble Peggio";
-                break;
+                 sceltaP = "Grenoble Peggio";
+                 break;
             case "B meglio":
-                scelta = "Grenoble Meglio";
-                break;
+                 sceltaP = "Grenoble Meglio";
+                 break;
             case "B molto meglio":
-                scelta = "Grenoble Molto Meglio";
+                 sceltaP = "Grenoble Molto Meglio";
+                 break;
+        }
+    } else if (A.startsWith('Grenoble Danneggiata') && B.startsWith('Reale')) {
+        switch(scelta){
+            case "B molto meglio":
+                sceltaP = "Reale Molto Meglio";
+                break;
+            default:
+                sceltaP = scelta;
+                break;
+        }
+    } else if (A.startsWith('Reale') && B.startsWith('Grenoble Danneggiata')) {
+        switch(scelta){
+            case "A molto meglio":
+                sceltaP = "Reale Molto Meglio";
+                break;
+            default:
+                sceltaP = scelta;
                 break;
         }
     }
-    return scelta;
+
+    return sceltaP;
 }

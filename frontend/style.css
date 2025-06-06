@@ -55,6 +55,11 @@ h1 {
     color: white;
 }
 
+#progressText{
+    height: 1px;
+    transition: all 0.2s ease-in-out;
+}
+
 .main #startBtn:hover {
     background-color: #0056b3;
     transform: scale(1.05);
