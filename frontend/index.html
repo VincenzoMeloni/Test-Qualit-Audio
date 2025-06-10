@@ -10,11 +10,16 @@
         <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1693/1693783.png">
     </head>
     <body>
-        <main class="main">
+        <main class="main" id="main">
             <div id="rettangolo">
             <h1><strong>Test Qualità Audio</strong></h1>
             </div>
-            <button id="startBtn" class="btn btn-primary mb-4">Genera Confronto</button>
+            <div class="progress-wrapper mb-4">
+                <p id="valutate"></p>
+                <div id="progressBar">
+                    <div id="progressFill"></div>
+                </div>
+            </div>
             <div class="row">
                 <div class="A">
                     <label><strong>A</strong></label>

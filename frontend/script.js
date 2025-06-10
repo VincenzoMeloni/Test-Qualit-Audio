@@ -25,21 +25,22 @@ const audioFiles = [
     { a: '/audio/4_EL.mp3', aLabel: 'ElevenLabs 4', b: '/audio/4_Reale.mp3', bLabel: 'Reale 4' },
     { a: '/audio/5_Reale.mp3', aLabel: 'Reale 5', b: '/audio/5_EL.mp3', bLabel: 'ElevenLabs 5' },
 
-    /* GRENOBLE VS REALE (alternati) */
+    /*
+    /* GRENOBLE VS REALE (alternati) 
     { a: '/audio/1_GR.mp3', aLabel: 'Grenoble 1', b: '/audio/1_Reale.mp3', bLabel: 'Reale 1' },
     { a: '/audio/2_Reale.mp3', aLabel: 'Reale 2', b: '/audio/2_GR.mp3', bLabel: 'Grenoble 2' },
     { a: '/audio/3_GR.mp3', aLabel: 'Grenoble 3', b: '/audio/3_Reale.mp3', bLabel: 'Reale 3' },
     { a: '/audio/4_Reale.mp3', aLabel: 'Reale 4', b: '/audio/4_GR.mp3', bLabel: 'Grenoble 4' },
     { a: '/audio/5_GR.mp3', aLabel: 'Grenoble 5', b: '/audio/5_Reale.mp3', bLabel: 'Reale 5' }
-
+*/
 ];
 
 const radioButtons = document.querySelectorAll('input[name="choice"]');
 const submitButton = document.getElementById('bottone-upload');
-const startBtn = document.getElementById('startBtn');
 const form = document.getElementById('form');
 let tempAudios = [...audioFiles];
-let audioCaricato = false;
+let audioAFinished = false;
+let audioBFinished = false;
 let currentPair = {};
 
 function getRandomPair() {
@@ -53,7 +54,7 @@ function getRandomPair() {
 
 function checkSelection() {
     const selectedRadio = document.querySelector('input[name="choice"]:checked');
-    submitButton.disabled = !(selectedRadio && audioCaricato);
+    submitButton.disabled = !(selectedRadio && audioAFinished && audioBFinished);
 }
 
 function showRandomAudio(){
@@ -63,8 +64,7 @@ function showRandomAudio(){
 
     currentPair = getRandomPair();
 
-    audioCaricato = true;
-    submitButton.disabled = false;
+    submitButton.disabled = true;
 
     const audioContainerA = document.getElementById('audioA');
     const audioContainerB = document.getElementById('audioB');
@@ -83,17 +83,92 @@ function showRandomAudio(){
     audioContainerA.appendChild(audioA);
     audioContainerB.appendChild(audioB);
 
+    checkAudios(audioA,audioB);
+
     radioButtons.forEach(radio => radio.checked = false);
     checkSelection();
 }
-
-startBtn.addEventListener('click', showRandomAudio);
 
 radioButtons.forEach(radio => {
     radio.addEventListener('change', checkSelection);
 });
 
-document.addEventListener('DOMContentLoaded', checkSelection);
+function initPage() {
+    showRandomAudio();
+    checkSelection();
+}
+
+document.addEventListener('DOMContentLoaded' , initPage);
+
+window.addEventListener('beforeunload', function(e){
+    e.preventDefault();
+});
+
+function updateProgressBar() {
+    const total = audioFiles.length;
+    const remaining = tempAudios.length;
+    const completed = total - remaining;
+    let percent = Math.round((completed / total) * 100);
+
+    const valutate = document.getElementById('valutate');
+    valutate.innerHTML = `${completed}/${total}`;
+
+    const progressFill = document.getElementById('progressFill');
+    progressFill.style.width = `${percent}%`;
+
+    if(percent == 100){
+        setTimeout(()=>{
+            finalSection();
+        },2000);
+    }
+
+    if (percent >= 75) {
+        progressFill.style.backgroundColor = '#198754';
+    } else if (percent >= 50) {
+        progressFill.style.backgroundColor = '#ffc107';
+    } else if (percent >= 25) {
+        progressFill.style.backgroundColor = '#fd7e14';
+    } else {
+        progressFill.style.backgroundColor = '#0d6efd';
+    }
+}
+
+function checkAudios(audioA, audioB) {
+    audioAFinished = false;
+    audioBFinished = false;
+
+    audioA.addEventListener('ended', () => {
+        audioAFinished = true;
+        checkSelection();
+    });
+
+    audioB.addEventListener('ended', () => {
+        audioBFinished = true;
+        checkSelection();
+    });
+}
+
+function finalSection(){
+    const main = document.getElementById('main');
+    main.innerHTML = `<div id="rettangolo">
+            <h1><strong>Test Qualità Audio</strong></h1></div>
+    <div><p class="final-message">Grazie per aver Partecipato!</p>
+    <div style="display:block; text-align:center;">
+                    <button id="toStart" class="btn btn-primary mb-4">Torna all'inizio</button>
+                    <div id="messageBox" class="message-box mt-2"></div>
+                </div>
+    </div>`;
+    localStorage.clear();
+}
+
+function gotoBefore(){
+    const start = document.getElementById('toStart');
+    start.addEventListener('click', function(e){
+        window.location.href='/before.html';
+    });
+}
+
+document.addEventListener('DOMContentLoaded', gotoBefore);
 
 function showMessage(message, type) {
     const box = document.getElementById('messageBox');
@@ -123,13 +198,12 @@ form.addEventListener('submit', async function (e) {
         return;
     }
 
-    if (!audioCaricato || !currentPair) {
+    if (!audioAFinished || !audioBFinished || !currentPair) {
         showMessage('Genera prima una coppia di audio da valutare.', 'error');
         return;
     }
 
     submitButton.disabled = true;
-    startBtn.disabled = true;
 
     let sceltaUtente = selectedRadio.value;
     let sceltaN = normalizzaScelta(currentPair.aLabel,currentPair.bLabel,sceltaUtente);
@@ -147,9 +221,7 @@ form.addEventListener('submit', async function (e) {
             body: JSON.stringify(payload)
         });
 
-        if (res.ok) {
-            showMessage('Valutazione inviata con successo.', 'success');
-        } else {
+        if(!res.ok){
             showMessage('Errore nell’invio della valutazione.', 'error');
             submitButton.disabled = false;
         }
@@ -157,7 +229,8 @@ form.addEventListener('submit', async function (e) {
         showMessage('Errore di rete o server non raggiungibile.', 'error');
         submitButton.disabled = false;
     } finally {
-        startBtn.disabled = false;
+        updateProgressBar();
+        showRandomAudio();
     }
 });
 
@@ -206,6 +279,24 @@ function normalizzaScelta(A, B, scelta) {
     } else if (A.startsWith('Reale') && B.startsWith('Grenoble Danneggiata')) {
         switch(scelta){
             case "A molto meglio":
+                sceltaP = "Reale Molto Meglio";
+                break;
+            default:
+                sceltaP = scelta;
+                break;
+        }
+    } else if (A.startsWith('Reale') && B.startsWith('ElevenLabs')){
+        switch(scelta){
+            case "A molto meglio":
+                sceltaP = "Reale Molto Meglio";
+                break;
+            default:
+                sceltaP = scelta;
+                break;
+        }
+    } else if (A.startsWith('ElevenLabs') && B.startsWith('Reale')){
+        switch(scelta){
+            case "B molto meglio":
                 sceltaP = "Reale Molto Meglio";
                 break;
             default:

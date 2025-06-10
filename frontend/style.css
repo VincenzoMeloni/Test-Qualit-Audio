@@ -39,7 +39,6 @@ h1 {
 }
 
 
-.main #startBtn,
 .main #bottone-upload {
     padding: 10px 20px;
     font-size: 1.1rem;
@@ -49,20 +48,9 @@ h1 {
     transition: background-color 0.3s, transform 0.2s ease;
 }
 
-.main #startBtn {
-    margin-top: 50px;
-    background-color: #007bff;
-    color: white;
-}
-
 #progressText{
     height: 1px;
     transition: all 0.2s ease-in-out;
-}
-
-.main #startBtn:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
 }
 
 .main #bottone-upload {
@@ -74,6 +62,12 @@ h1 {
 .main #bottone-upload:hover {
     background-color: #218838;
     transform: scale(1.05);
+}
+
+.main #bottone-upload:disabled{
+    background-color: gray;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 .likert {
@@ -117,7 +111,38 @@ h1 {
     gap: 10px;
 }
 
+.progress-wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#progressBar {
+    height: 30px;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+#progressFill {
+    height: 100%;
+    width: 0%;
+    background-color: #0d6efd;
+    transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+#valutate{
+    margin-top:5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
 .A, .B {
+    margin-top:30px;
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -152,6 +177,38 @@ h1 {
     max-width: 250px;
 }
 
+.final-message {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 150px;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 30px 20px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.final-message:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#toStart{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.5rem;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+#toStart:hover{
+    transform: scale(1.05);
+}
+
+
 @media (max-width: 996px) {
     .A, .B {
         transform: none;
@@ -177,10 +234,6 @@ h1 {
     .main > h1{
         font-size: 25px;
         margin-top: 10px;
-    }
-
-    .main #startBtn{
-        margin-top: 3px;
     }
 
     .valuta #bottone-upload{

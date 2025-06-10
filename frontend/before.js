@@ -6,13 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     return `utente_${timestamp}_${random}`;
   }
 
-  let utenteId = localStorage.getItem('utenteId');
-
-  if(!utenteId){
-    utenteId = generaIdUtente();
-    localStorage.setItem('utenteId',utenteId);
-  }
-
   const form = document.getElementById('userForm');
   const nextBtn = document.getElementById('nextBtn');
 
@@ -33,6 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   nextBtn.addEventListener('click', async (e) => {
     e.preventDefault();
+
+    let utenteId = localStorage.getItem('utenteId');
+    
+    if(!utenteId){
+      utenteId = generaIdUtente();
+      localStorage.setItem('utenteId',utenteId);
+    }
 
     if (!checkFormValidity()) {
       form.reportValidity();

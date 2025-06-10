@@ -43,7 +43,7 @@ const affCsvWriter = createObjectCsvWriter({
   path: AFF_PATH,
   header: [
     { id: 'utente', title: 'Utente' },
-    { id: 'corrette_su_5', title: 'corrette_su_5' },
+    { id: 'corrette_su_10', title: 'corrette_su_10' },
     { id: 'affidabilita', title: 'affidabilita(%)' },
     { id: 'media', title: 'Score_Medio_Grenoble' }
   ],

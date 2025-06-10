@@ -11,11 +11,11 @@ const INPUT_CSV = path.join(__dirname, '../../valutazioni.csv');
 const AFF_PATH = path.join(__dirname, '../../affidabilita.csv');
 
 const risposteCorrette = {
-  "Grenoble Danneggiata 1": "Reale Molto Meglio",
-  "Grenoble Danneggiata 2": "Reale Molto Meglio",
-  "Grenoble Danneggiata 3": "Reale Molto Meglio",
-  "Grenoble Danneggiata 4": "Reale Molto Meglio",
-  "Grenoble Danneggiata 5": "Reale Molto Meglio"
+  "Reale 1": "Reale Molto Meglio",
+  "Reale 2": "Reale Molto Meglio",
+  "Reale 3": "Reale Molto Meglio",
+  "Reale 4": "Reale Molto Meglio",
+  "Reale 5": "Reale Molto Meglio"
 };
 
 const valutazioni = {
@@ -53,10 +53,7 @@ function processaDati(records, risposteCorrette, valutazioni) {
       };
     }
 
-    if (
-      (A.startsWith('Grenoble Danneggiata') && B.startsWith('Reale')) ||
-      (B.startsWith('Grenoble Danneggiata') && A.startsWith('Reale'))
-    ) {
+    if (A.startsWith('Reale') || B.startsWith('Reale')) {
       utenti[Utente].controllo.push(row);
     }
     else if (
@@ -76,19 +73,19 @@ function processaDati(records, risposteCorrette, valutazioni) {
   for (const [utente, dati] of Object.entries(utenti)) {
     if (utentiElaborati.has(utente)) continue;
     const { controllo, valutazioni: valutazioniUtente } = dati;
-    if (controllo.length < 5 || valutazioniUtente.length < 10) continue;
+    if (controllo.length < 10 || valutazioniUtente.length < 10) continue;
 
     let corrette = 0;
     for (const row of controllo) {
       const { A, B, Scelta } = row;
-      const sample = A.startsWith('Grenoble Danneggiata') ? A : B;
+      const sample = A.startsWith('Reale') ? A : B;
       const sceltaUtente = Scelta.trim();
       const corretta = risposteCorrette[sample]?.trim();
       if (sceltaUtente === corretta) corrette++;
     }
 
     const percentuale = ((corrette / controllo.length) * 100).toFixed(2);
-    if (corrette < 4) continue;
+    if (corrette < 7) continue;
 
     let totale = 0;
     let conteggio = 0;
@@ -107,7 +104,7 @@ function processaDati(records, risposteCorrette, valutazioni) {
 
     risultati.push({
       utente,
-      corrette_su_5: corrette,
+      corrette_su_10: corrette,
       affidabilita: percentuale,
       media
     });
