@@ -30,6 +30,7 @@ body {
     color: black;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 5px;
+    animation: fadeInUp 1s ease-out forwards;
 }
 
 h1 {
@@ -38,9 +39,16 @@ h1 {
     font-weight: bold;
 }
 
+#progressText{
+    height: 1px;
+    transition: all 0.2s ease-in-out;
+}
 
 .main #bottone-upload {
     padding: 10px 20px;
+    margin-top: 100px;
+    background-color: #2e5d2e;
+    color: white;
     font-size: 1.1rem;
     border: none;
     border-radius: 5px;
@@ -48,19 +56,8 @@ h1 {
     transition: background-color 0.3s, transform 0.2s ease;
 }
 
-#progressText{
-    height: 1px;
-    transition: all 0.2s ease-in-out;
-}
-
-.main #bottone-upload {
-    margin-top: 100px;
-    background-color: #28a745;
-    color: white;
-}
-
 .main #bottone-upload:hover {
-    background-color: #218838;
+    background-color: #3e7d3e;
     transform: scale(1.05);
 }
 
@@ -140,7 +137,6 @@ h1 {
     font-weight: bold;
 }
 
-
 .A, .B {
     margin-top:30px;
     width: 45%;
@@ -170,6 +166,7 @@ h1 {
     background-color: #f2f2f2;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out forwards;
 }
 
 .audio-container audio {
@@ -199,16 +196,33 @@ h1 {
 
 #toStart{
     text-align: center;
+    background-color: #1a3e1a;
     margin-top: 100px;
     font-size: 1.5rem;
     transition: background-color 0.3s, transform 0.2s ease;
 }
 
-#toStart:hover{
+button#toStart:hover{
+    background-color: #2e5d2e;
     transform: scale(1.05);
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+  }
+}
 
+.final-message,
+#toStart {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/*responsive*/
 @media (max-width: 996px) {
     .A, .B {
         transform: none;

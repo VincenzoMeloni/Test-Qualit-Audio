@@ -30,6 +30,7 @@ body {
     color: black;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 5px;
+    animation: fadeInUp 1s ease-out forwards;
 }
 
 
@@ -45,6 +46,7 @@ body {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
     max-width: 500px;
     width: 100%;
+    animation: fadeInUp 1s ease-out forwards;
 }
 
 .regioneN,.regioneR,.genere{
@@ -55,14 +57,30 @@ body {
     margin-top: 30px;
     padding: 10px 20px;
     font-size: 1.1rem;
+    background-color: #2e5d2e;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s ease;
 }
 
+#nextBtn:hover{
+    background-color: #3e7d3e;
+    transform: scale(1.05);
+}
+
 #nextBtn:disabled{
     background-color: gray;
     cursor: not-allowed;
-    pointer-events: none;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -6,9 +6,9 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const VAL_PATH = path.join(__dirname, '../../valutazioni.csv');
-const AFF_PATH = path.join(__dirname, '../../affidabilita.csv');
-const USER_PATH = path.join(__dirname, '../../partecipanti.csv');
+const VAL_PATH = path.join(__dirname, '../../risultati/valutazioni.csv');
+const AFF_PATH = path.join(__dirname, '../../risultati/affidabilita.csv');
+const USER_PATH = path.join(__dirname, '../../risultati/partecipanti.csv');
 
 const valExists = fs.existsSync(VAL_PATH);
 const affExists = fs.existsSync(AFF_PATH);

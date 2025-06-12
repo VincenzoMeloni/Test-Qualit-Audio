@@ -7,8 +7,8 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const INPUT_CSV = path.join(__dirname, '../../valutazioni.csv');
-const AFF_PATH = path.join(__dirname, '../../affidabilita.csv');
+const INPUT_CSV = path.join(__dirname, '../../risultati/valutazioni.csv');
+const AFF_PATH = path.join(__dirname, '../../risultati/affidabilita.csv');
 
 const risposteCorrette = {
   "Reale 1": "Reale Molto Meglio",
