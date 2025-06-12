@@ -2,7 +2,7 @@ const audioFiles = [
     /* ELEVEN LABS VS GRENOBLE (alternati) */
     { a: '/audio/1_EL.mp3', aLabel: 'ElevenLabs 1', b: '/audio/1_GR.mp3', bLabel: 'Grenoble 1' },
     { a: '/audio/2_GR.mp3', aLabel: 'Grenoble 2', b: '/audio/2_EL.mp3', bLabel: 'ElevenLabs 2' },
-    /*{ a: '/audio/3_EL.mp3', aLabel: 'ElevenLabs 3', b: '/audio/3_GR.mp3', bLabel: 'Grenoble 3' },
+    { a: '/audio/3_EL.mp3', aLabel: 'ElevenLabs 3', b: '/audio/3_GR.mp3', bLabel: 'Grenoble 3' },
     { a: '/audio/4_GR.mp3', aLabel: 'Grenoble 4', b: '/audio/4_EL.mp3', bLabel: 'ElevenLabs 4' },
     { a: '/audio/5_EL.mp3', aLabel: 'ElevenLabs 5', b: '/audio/5_GR.mp3', bLabel: 'Grenoble 5' },
     { a: '/audio/6_GR.mp3', aLabel: 'Grenoble 6', b: '/audio/6_EL.mp3', bLabel: 'ElevenLabs 6' },
@@ -12,14 +12,14 @@ const audioFiles = [
     { a: '/audio/10_GR.mp3', aLabel: 'Grenoble 10', b: '/audio/10_EL.mp3', bLabel: 'ElevenLabs 10' },
 
     /* GRENOBLE DANNEGGIATA VS REALE (alternati) */
-    /*{ a: '/audio/1_GR_DANN.mp3', aLabel: 'Grenoble Danneggiata 1', b: '/audio/1_Reale.mp3', bLabel: 'Reale 1' },
+    { a: '/audio/1_GR_DANN.mp3', aLabel: 'Grenoble Danneggiata 1', b: '/audio/1_Reale.mp3', bLabel: 'Reale 1' },
     { a: '/audio/2_Reale.mp3', aLabel: 'Reale 2', b: '/audio/2_GR_DANN.mp3', bLabel: 'Grenoble Danneggiata 2' },
     { a: '/audio/3_GR_DANN.mp3', aLabel: 'Grenoble Danneggiata 3', b: '/audio/3_Reale.mp3', bLabel: 'Reale 3' },
     { a: '/audio/4_Reale.mp3', aLabel: 'Reale 4', b: '/audio/4_GR_DANN.mp3', bLabel: 'Grenoble Danneggiata 4' },
     { a: '/audio/5_GR_DANN.mp3', aLabel: 'Grenoble Danneggiata 5', b: '/audio/5_Reale.mp3', bLabel: 'Reale 5' },
 
     /* REALE VS ELEVEN LABS (alternati) */
-    /*{ a: '/audio/1_Reale.mp3', aLabel: 'Reale 1', b: '/audio/1_EL.mp3', bLabel: 'ElevenLabs 1' },
+    { a: '/audio/1_Reale.mp3', aLabel: 'Reale 1', b: '/audio/1_EL.mp3', bLabel: 'ElevenLabs 1' },
     { a: '/audio/2_EL.mp3', aLabel: 'ElevenLabs 2', b: '/audio/2_Reale.mp3', bLabel: 'Reale 2' },
     { a: '/audio/3_Reale.mp3', aLabel: 'Reale 3', b: '/audio/3_EL.mp3', bLabel: 'ElevenLabs 3' },
     { a: '/audio/4_EL.mp3', aLabel: 'ElevenLabs 4', b: '/audio/4_Reale.mp3', bLabel: 'Reale 4' },
@@ -94,7 +94,6 @@ radioButtons.forEach(radio => {
 });
 
 function initPage() {
-    //finalSection();
     showRandomAudio();
     checkSelection();
 }
