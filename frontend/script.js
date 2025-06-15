@@ -160,11 +160,11 @@ function finalSection(){
                 </div>
     </div>`;
     localStorage.clear();
-    gotoBefore();
+    const start = document.getElementById('toStart');
+    gotoBefore(start);
 }
 
-function gotoBefore(){
-    const start = document.getElementById('toStart');
+function gotoBefore(start){
     window.removeEventListener('beforeunload', handler);
 
     start.addEventListener('click', function(e){

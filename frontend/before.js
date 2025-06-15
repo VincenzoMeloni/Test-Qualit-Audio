@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  localStorage.clear();
   
   function generaIdUtente() {
     const timestamp = Date.now().toString(36);
@@ -27,17 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
   nextBtn.addEventListener('click', async (e) => {
     e.preventDefault();
 
-    let utenteId = localStorage.getItem('utenteId');
-    
-    if(!utenteId){
-      utenteId = generaIdUtente();
-      localStorage.setItem('utenteId',utenteId);
-    }
-
     if (!checkFormValidity()) {
       form.reportValidity();
       return;
     }
+
+    const utenteId = generaIdUtente();
+    localStorage.setItem('utenteId',utenteId);
 
     const data = {
       utente: utenteId,

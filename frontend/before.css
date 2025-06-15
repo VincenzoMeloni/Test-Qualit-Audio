@@ -84,3 +84,21 @@ body {
     transform: translateY(0);
   }
 }
+
+
+@media (max-width: 996px) {
+
+    .regioneN,.regioneR,.genere{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media (max-width: 768px){
+    
+    .regioneN,.regioneR,.genere{
+        margin-bottom: 10px;
+    }
+    
+}
