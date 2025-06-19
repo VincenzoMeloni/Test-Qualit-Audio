@@ -84,8 +84,9 @@ function processaDati(records, risposteCorrette, valutazioni) {
       if (sceltaUtente === corretta) corrette++;
     }
 
-    const percentuale = ((corrette / controllo.length) * 100).toFixed(2);
     if (corrette < 7) continue;
+    
+    const percentuale = ((corrette / controllo.length) * 100).toFixed(2);
 
     let totale = 0;
     let conteggio = 0;
