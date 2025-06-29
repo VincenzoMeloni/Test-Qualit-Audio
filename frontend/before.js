@@ -20,9 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
     nextBtn.disabled = !checkFormValidity();
   }
 
-  const requiredFields = form.querySelectorAll('select[required]');
+  const requiredFields = form.querySelectorAll('select[required], input[required]');
   requiredFields.forEach(field => {
-    field.addEventListener('change', updateButtonState);
+    const eventType = field.tagName.toLowerCase() === 'select' ? 'change' : 'input';
+    field.addEventListener(eventType, updateButtonState);
   });
 
   nextBtn.addEventListener('click', async (e) => {
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
       utente: utenteId,
       regioneNascita: form.regioneN.value,
       regioneResidenza: form.regioneR.value,
+      eta: Number(form.eta.value),
       genere: form.genere.value,
       titoloStudio: form.studio.value
     };

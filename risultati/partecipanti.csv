@@ -1,6 +1,24 @@
-Utente,Regione_Nascita,Regione_Residenza,Genere,Titolo_Studio
-utente_mbxvkssy_8551,Basilicata,Sardegna,Uomo,Diploma professionale
-utente_mbxvtv38_8676,Campania,Campania,Uomo,Diploma di scuola superiore
-utente_mc2kqzdz_2232,Campania,Campania,Uomo,Laurea triennale
-utente_mc2mdy2t_8413,Campania,Lazio,Uomo,Laurea triennale
-utente_mc2nav8u_5451,Campania,Lazio,Donna,Laurea triennale
+Utente,Regione_Nascita,Regione_Residenza,Età,Genere,Titolo_Studio
+utente_mc822xq7_3162,Campania,Campania,23,Uomo,Diploma di scuola superiore
+utente_mc82np8h_8571,Campania,Campania,23,Uomo,Diploma di scuola superiore
+utente_mc8396yz_3725,Campania,Campania,23,Uomo,Scuola dell'obbligo
+utente_mc96p9ri_6334,Campania,Campania,20,Uomo,Diploma di scuola superiore
+utente_mc96qdsr_3657,Lazio,Campania,21,Uomo,Diploma professionale
+utente_mc96rbwh_2036,Campania,Campania,20,Donna,Diploma di scuola superiore
+utente_mc96sprf_8979,Lazio,Campania,22,Donna,Diploma di scuola superiore
+utente_mc96tvlw_8277,Campania,Campania,23,Uomo,Laurea triennale
+utente_mc96unnk_6744,Lazio,Lazio,24,Donna,Laurea triennale
+utente_mc96vq1q_3553,Campania,Campania,19,Uomo,Scuola dell'obbligo
+utente_mc96wjk8_3550,Lazio,Lazio,22,Uomo,Diploma di scuola superiore
+utente_mc96x8vg_2747,Campania,Campania,21,Uomo,Diploma professionale
+utente_mc96y1nt_6490,Campania,Campania,25,Uomo,Laurea triennale
+utente_mc98p6xp_4414,Calabria,Calabria,24,Uomo,Laurea triennale
+utente_mc98y4zi_4270,Campania,Campania,23,Uomo,Diploma di scuola superiore
+utente_mc99ttm5_3270,Campania,Campania,20,Donna,Diploma di scuola superiore
+utente_mc9h0k76_8718,Campania,Campania,54,Uomo,Scuola dell'obbligo
+utente_mc9hj6m7_9714,Campania,Campania,51,Donna,Diploma di scuola superiore
+utente_mc9ksaly_0484,Campania,Campania,24,Uomo,Laurea triennale
+utente_mcbwk2mp_6591,Campania,Campania,25,Donna,Laurea magistrale
+utente_mcbx2qan_4587,Lazio,Campania,26,Donna,Laurea magistrale
+utente_mcbxp96z_7159,Campania,Campania,26,Donna,Laurea magistrale
+utente_mcbyc2v4_2494,Campania,Campania,26,Donna,Laurea magistrale

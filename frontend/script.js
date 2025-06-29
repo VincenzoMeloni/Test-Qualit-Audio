@@ -156,7 +156,8 @@ function finalSection(){
             <h1><strong>Test Qualità Audio</strong></h1></div>
     <div><p class="final-message">Grazie per il prezioso Feedback!</p>
     <div style="display:block; text-align:center;">
-                    <button id="toStart" class="btn btn-primary mb-4">Torna all'inizio</button>
+                    <button id="toStart" class="btn btn-primary mb-4">
+                    <i class="bi bi-arrow-counterclockwise me-2"></i>Torna all'inizio</button>
                 </div>
     </div>`;
     localStorage.clear();

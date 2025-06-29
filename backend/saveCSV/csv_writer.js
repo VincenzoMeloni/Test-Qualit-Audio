@@ -77,6 +77,7 @@ const userCsvWriter = createObjectCsvWriter({
     { id: 'utente', title:'Utente'},
     { id: 'regioneNascita', title: 'Regione_Nascita' },
     { id: 'regioneResidenza', title: 'Regione_Residenza' },
+    { id: 'eta', title: 'Età'},
     { id: 'genere', title: 'Genere' },
     { id: 'titoloStudio', title: 'Titolo_Studio' }
   ],

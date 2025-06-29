@@ -1,44 +1,461 @@
 Utente,A,B,Scelta
-utente_mbxvkssy_8551,ElevenLabs 1,Grenoble 1,Uguale
-utente_mbxvtv38_8676,ElevenLabs 2,Reale 2,Reale Molto Meglio
-utente_mbxvtv38_8676,Grenoble 8,ElevenLabs 8,Grenoble Meglio
-utente_mbxvtv38_8676,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
-utente_mbxvtv38_8676,ElevenLabs 7,Grenoble 7,Grenoble Meglio
-utente_mbxvtv38_8676,ElevenLabs 3,Grenoble 3,Grenoble Meglio
-utente_mbxvtv38_8676,Grenoble 2,ElevenLabs 2,Grenoble Peggio
-utente_mbxvtv38_8676,ElevenLabs 4,Reale 4,Reale Molto Meglio
-utente_mbxvtv38_8676,Reale 5,ElevenLabs 5,Reale Molto Meglio
-utente_mbxvtv38_8676,Reale 1,ElevenLabs 1,Reale Molto Meglio
-utente_mbxvtv38_8676,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
-utente_mbxvtv38_8676,Grenoble 10,ElevenLabs 10,Uguale
-utente_mbxvtv38_8676,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
-utente_mbxvtv38_8676,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
-utente_mbxvtv38_8676,ElevenLabs 1,Grenoble 1,Uguale
-utente_mbxvtv38_8676,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
-utente_mbxvtv38_8676,Reale 3,ElevenLabs 3,A meglio
-utente_mbxvtv38_8676,Grenoble 6,ElevenLabs 6,Grenoble Peggio
-utente_mbxvtv38_8676,ElevenLabs 5,Grenoble 5,Grenoble Molto Meglio
-utente_mbxvtv38_8676,Grenoble 4,ElevenLabs 4,Grenoble Meglio
-utente_mbxvtv38_8676,ElevenLabs 9,Grenoble 9,Uguale
-utente_mc2kqzdz_2232,Reale 3,ElevenLabs 3,Reale Molto Meglio
-utente_mc2kqzdz_2232,ElevenLabs 2,Reale 2,Reale Molto Meglio
-utente_mc2kqzdz_2232,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
-utente_mc2kqzdz_2232,ElevenLabs 5,Grenoble 5,Grenoble Meglio
-utente_mc2kqzdz_2232,Grenoble 2,ElevenLabs 2,Grenoble Peggio
-utente_mc2kqzdz_2232,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
-utente_mc2kqzdz_2232,Reale 5,ElevenLabs 5,Uguale
-utente_mc2kqzdz_2232,Grenoble 8,ElevenLabs 8,Grenoble Peggio
-utente_mc2kqzdz_2232,Grenoble 6,ElevenLabs 6,Grenoble Meglio
-utente_mc2kqzdz_2232,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
-utente_mc2kqzdz_2232,Reale 2,Grenoble Danneggiata 2,A meglio
-utente_mc2kqzdz_2232,ElevenLabs 1,Grenoble 1,Grenoble Peggio
-utente_mc2kqzdz_2232,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
-utente_mc2kqzdz_2232,ElevenLabs 9,Grenoble 9,Grenoble Meglio
-utente_mc2kqzdz_2232,Grenoble 4,ElevenLabs 4,Uguale
-utente_mc2kqzdz_2232,Grenoble 10,ElevenLabs 10,Uguale
-utente_mc2kqzdz_2232,ElevenLabs 7,Grenoble 7,Uguale
-utente_mc2kqzdz_2232,ElevenLabs 4,Reale 4,Reale Molto Meglio
-utente_mc2kqzdz_2232,ElevenLabs 3,Grenoble 3,Uguale
-utente_mc2kqzdz_2232,Reale 1,ElevenLabs 1,Reale Molto Meglio
-utente_mc2mdy2t_8413,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
-utente_mc2nav8u_5451,ElevenLabs 1,Grenoble 1,Grenoble Peggio
+utente_mc822xq7_3162,ElevenLabs 3,Grenoble 3,Grenoble Meglio
+utente_mc822xq7_3162,Grenoble 10,ElevenLabs 10,Grenoble Peggio
+utente_mc822xq7_3162,ElevenLabs 4,Reale 4,Reale Molto Meglio
+utente_mc822xq7_3162,ElevenLabs 5,Grenoble 5,Grenoble Meglio
+utente_mc822xq7_3162,ElevenLabs 7,Grenoble 7,Grenoble Molto Peggio
+utente_mc822xq7_3162,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc822xq7_3162,ElevenLabs 9,Grenoble 9,Grenoble Peggio
+utente_mc822xq7_3162,Grenoble 8,ElevenLabs 8,Grenoble Molto Meglio
+utente_mc822xq7_3162,ElevenLabs 1,Grenoble 1,Grenoble Molto Peggio
+utente_mc822xq7_3162,ElevenLabs 2,Reale 2,B meglio
+utente_mc822xq7_3162,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc822xq7_3162,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mc822xq7_3162,Reale 1,ElevenLabs 1,Uguale
+utente_mc822xq7_3162,Grenoble 6,ElevenLabs 6,Grenoble Peggio
+utente_mc822xq7_3162,Reale 3,ElevenLabs 3,Reale Molto Meglio
+utente_mc822xq7_3162,Grenoble 2,ElevenLabs 2,Grenoble Peggio
+utente_mc822xq7_3162,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mc822xq7_3162,Grenoble 4,ElevenLabs 4,Grenoble Molto Meglio
+utente_mc822xq7_3162,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mc822xq7_3162,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mc82np8h_8571,ElevenLabs 5,Grenoble 5,Grenoble Meglio
+utente_mc82np8h_8571,ElevenLabs 1,Grenoble 1,Grenoble Molto Peggio
+utente_mc82np8h_8571,Grenoble 2,ElevenLabs 2,Uguale
+utente_mc82np8h_8571,ElevenLabs 9,Grenoble 9,Grenoble Meglio
+utente_mc82np8h_8571,ElevenLabs 4,Reale 4,Reale Molto Meglio
+utente_mc82np8h_8571,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mc82np8h_8571,ElevenLabs 3,Grenoble 3,Grenoble Molto Meglio
+utente_mc82np8h_8571,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc82np8h_8571,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mc82np8h_8571,Grenoble 10,ElevenLabs 10,Grenoble Peggio
+utente_mc82np8h_8571,Reale 1,ElevenLabs 1,Reale Molto Meglio
+utente_mc82np8h_8571,Grenoble 6,ElevenLabs 6,Grenoble Peggio
+utente_mc82np8h_8571,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc82np8h_8571,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mc82np8h_8571,ElevenLabs 7,Grenoble 7,Grenoble Peggio
+utente_mc82np8h_8571,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mc82np8h_8571,Grenoble 4,ElevenLabs 4,Grenoble Meglio
+utente_mc82np8h_8571,Grenoble 8,ElevenLabs 8,Grenoble Molto Meglio
+utente_mc82np8h_8571,ElevenLabs 2,Reale 2,Reale Molto Meglio
+utente_mc82np8h_8571,Reale 3,ElevenLabs 3,Reale Molto Meglio
+utente_mc8396yz_3725,Grenoble 10,ElevenLabs 10,Grenoble Peggio
+utente_mc8396yz_3725,Grenoble 6,ElevenLabs 6,Grenoble Peggio
+utente_mc8396yz_3725,ElevenLabs 4,Reale 4,Reale Molto Meglio
+utente_mc8396yz_3725,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc8396yz_3725,Reale 1,ElevenLabs 1,B meglio
+utente_mc8396yz_3725,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mc8396yz_3725,ElevenLabs 2,Reale 2,Reale Molto Meglio
+utente_mc8396yz_3725,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mc8396yz_3725,Grenoble 2,ElevenLabs 2,Grenoble Peggio
+utente_mc8396yz_3725,ElevenLabs 7,Grenoble 7,Grenoble Molto Peggio
+utente_mc8396yz_3725,Reale 3,ElevenLabs 3,A meglio
+utente_mc8396yz_3725,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mc8396yz_3725,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc8396yz_3725,ElevenLabs 3,Grenoble 3,Grenoble Meglio
+utente_mc8396yz_3725,Grenoble 4,ElevenLabs 4,Grenoble Meglio
+utente_mc8396yz_3725,ElevenLabs 9,Grenoble 9,Grenoble Molto Peggio
+utente_mc8396yz_3725,ElevenLabs 5,Grenoble 5,Uguale
+utente_mc8396yz_3725,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mc8396yz_3725,Grenoble 8,ElevenLabs 8,Grenoble Meglio
+utente_mc8396yz_3725,ElevenLabs 1,Grenoble 1,Grenoble Peggio
+utente_mc96p9ri_6334,ElevenLabs 3,Grenoble 3,Grenoble Meglio
+utente_mc96p9ri_6334,Grenoble 10,ElevenLabs 10,Grenoble Peggio
+utente_mc96p9ri_6334,ElevenLabs 4,Reale 4,Reale Molto Meglio
+utente_mc96p9ri_6334,ElevenLabs 5,Grenoble 5,Grenoble Meglio
+utente_mc96p9ri_6334,ElevenLabs 7,Grenoble 7,Grenoble Molto Peggio
+utente_mc96p9ri_6334,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc96p9ri_6334,ElevenLabs 9,Grenoble 9,Grenoble Peggio
+utente_mc96p9ri_6334,Grenoble 8,ElevenLabs 8,Grenoble Molto Meglio
+utente_mc96p9ri_6334,ElevenLabs 1,Grenoble 1,Grenoble Molto Peggio
+utente_mc96p9ri_6334,ElevenLabs 2,Reale 2,B meglio
+utente_mc96p9ri_6334,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc96p9ri_6334,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mc96p9ri_6334,Reale 1,ElevenLabs 1,Uguale
+utente_mc96p9ri_6334,Grenoble 6,ElevenLabs 6,Grenoble Peggio
+utente_mc96p9ri_6334,Reale 3,ElevenLabs 3,Uguale
+utente_mc96p9ri_6334,Grenoble 2,ElevenLabs 2,Grenoble Peggio
+utente_mc96p9ri_6334,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mc96p9ri_6334,Grenoble 4,ElevenLabs 4,Grenoble Molto Meglio
+utente_mc96p9ri_6334,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mc96p9ri_6334,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mc96qdsr_3657,Grenoble 10,ElevenLabs 10,Grenoble Peggio
+utente_mc96qdsr_3657,Grenoble 6,ElevenLabs 6,Grenoble Peggio
+utente_mc96qdsr_3657,ElevenLabs 4,Reale 4,Reale Molto Meglio
+utente_mc96qdsr_3657,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc96qdsr_3657,Reale 1,ElevenLabs 1,Reale Molto Meglio
+utente_mc96qdsr_3657,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mc96qdsr_3657,ElevenLabs 2,Reale 2,Reale Molto Meglio
+utente_mc96qdsr_3657,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mc96qdsr_3657,Grenoble 2,ElevenLabs 2,Grenoble Peggio
+utente_mc96qdsr_3657,ElevenLabs 7,Grenoble 7,Grenoble Molto Peggio
+utente_mc96qdsr_3657,Reale 3,ElevenLabs 3,A meglio
+utente_mc96qdsr_3657,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mc96qdsr_3657,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc96qdsr_3657,ElevenLabs 3,Grenoble 3,Grenoble Meglio
+utente_mc96qdsr_3657,Grenoble 4,ElevenLabs 4,Grenoble Meglio
+utente_mc96qdsr_3657,ElevenLabs 9,Grenoble 9,Grenoble Molto Peggio
+utente_mc96qdsr_3657,ElevenLabs 5,Grenoble 5,Uguale
+utente_mc96qdsr_3657,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mc96qdsr_3657,Grenoble 8,ElevenLabs 8,Grenoble Meglio
+utente_mc96qdsr_3657,ElevenLabs 1,Grenoble 1,Grenoble Peggio
+utente_mc96rbwh_2036,ElevenLabs 5,Grenoble 5,Grenoble Meglio
+utente_mc96rbwh_2036,ElevenLabs 1,Grenoble 1,Grenoble Molto Peggio
+utente_mc96rbwh_2036,Grenoble 2,ElevenLabs 2,Uguale
+utente_mc96rbwh_2036,ElevenLabs 9,Grenoble 9,Grenoble Meglio
+utente_mc96rbwh_2036,ElevenLabs 4,Reale 4,Uguale
+utente_mc96rbwh_2036,Reale 5,ElevenLabs 5,Uguale
+utente_mc96rbwh_2036,ElevenLabs 3,Grenoble 3,Grenoble Molto Meglio
+utente_mc96rbwh_2036,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc96rbwh_2036,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mc96rbwh_2036,Grenoble 10,ElevenLabs 10,Grenoble Peggio
+utente_mc96rbwh_2036,Reale 1,ElevenLabs 1,Reale Molto Meglio
+utente_mc96rbwh_2036,Grenoble 6,ElevenLabs 6,Grenoble Peggio
+utente_mc96rbwh_2036,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc96rbwh_2036,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mc96rbwh_2036,ElevenLabs 7,Grenoble 7,Grenoble Peggio
+utente_mc96rbwh_2036,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mc96rbwh_2036,Grenoble 4,ElevenLabs 4,Grenoble Meglio
+utente_mc96rbwh_2036,Grenoble 8,ElevenLabs 8,Grenoble Meglio
+utente_mc96rbwh_2036,ElevenLabs 2,Reale 2,Reale Molto Meglio
+utente_mc96rbwh_2036,Reale 3,ElevenLabs 3,Reale Molto Meglio
+utente_mc96sprf_8979,ElevenLabs 3,Grenoble 3,Uguale 
+utente_mc96sprf_8979,Grenoble 10,ElevenLabs 10,Grenoble Peggio
+utente_mc96sprf_8979,ElevenLabs 4,Reale 4,Reale Molto Meglio
+utente_mc96sprf_8979,ElevenLabs 5,Grenoble 5,Uguale 
+utente_mc96sprf_8979,ElevenLabs 7,Grenoble 7,Grenoble Molto Peggio
+utente_mc96sprf_8979,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc96sprf_8979,ElevenLabs 9,Grenoble 9,Grenoble Peggio
+utente_mc96sprf_8979,Grenoble 8,ElevenLabs 8,Grenoble Molto Meglio
+utente_mc96sprf_8979,ElevenLabs 1,Grenoble 1,Grenoble Molto Peggio
+utente_mc96sprf_8979,ElevenLabs 2,Reale 2,Reale Molto Meglio 
+utente_mc96sprf_8979,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc96sprf_8979,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mc96sprf_8979,Reale 1,ElevenLabs 1,Reale Molto Meglio 
+utente_mc96sprf_8979,Grenoble 6,ElevenLabs 6,Grenoble Peggio
+utente_mc96sprf_8979,Reale 3,ElevenLabs 3,Reale Molto Meglio
+utente_mc96sprf_8979,Grenoble 2,ElevenLabs 2,Grenoble Peggio
+utente_mc96sprf_8979,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mc96sprf_8979,Grenoble 4,ElevenLabs 4,Grenoble Molto Meglio
+utente_mc96sprf_8979,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mc96sprf_8979,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mc96tvlw_8277,ElevenLabs 3,Grenoble 3,Uguale 
+utente_mc96tvlw_8277,Grenoble 10,ElevenLabs 10,Grenoble Peggio
+utente_mc96tvlw_8277,ElevenLabs 4,Reale 4,Reale Molto Meglio
+utente_mc96tvlw_8277,ElevenLabs 5,Grenoble 5,Grenoble Meglio
+utente_mc96tvlw_8277,ElevenLabs 7,Grenoble 7,Grenoble Molto Peggio
+utente_mc96tvlw_8277,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc96tvlw_8277,ElevenLabs 9,Grenoble 9,Grenoble Peggio
+utente_mc96tvlw_8277,Grenoble 8,ElevenLabs 8,Grenoble Molto Meglio
+utente_mc96tvlw_8277,ElevenLabs 1,Grenoble 1,Grenoble Molto Peggio
+utente_mc96tvlw_8277,ElevenLabs 2,Reale 2,B meglio
+utente_mc96tvlw_8277,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc96tvlw_8277,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mc96tvlw_8277,Reale 1,ElevenLabs 1,Reale Molto Meglio
+utente_mc96tvlw_8277,Grenoble 6,ElevenLabs 6,Grenoble Peggio
+utente_mc96tvlw_8277,Reale 3,ElevenLabs 3,Uguale
+utente_mc96tvlw_8277,Grenoble 2,ElevenLabs 2,Grenoble Peggio
+utente_mc96tvlw_8277,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mc96tvlw_8277,Grenoble 4,ElevenLabs 4,Grenoble Molto Meglio
+utente_mc96tvlw_8277,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mc96tvlw_8277,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mc96unnk_6744,ElevenLabs 5,Grenoble 5,Grenoble Meglio
+utente_mc96unnk_6744,ElevenLabs 1,Grenoble 1,Grenoble Molto Peggio
+utente_mc96unnk_6744,Grenoble 2,ElevenLabs 2,Uguale
+utente_mc96unnk_6744,ElevenLabs 9,Grenoble 9,Grenoble Peggio
+utente_mc96unnk_6744,ElevenLabs 4,Reale 4,Reale Molto Meglio
+utente_mc96unnk_6744,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mc96unnk_6744,ElevenLabs 3,Grenoble 3,Grenoble Molto Meglio
+utente_mc96unnk_6744,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc96unnk_6744,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mc96unnk_6744,Grenoble 10,ElevenLabs 10,Grenoble Peggio
+utente_mc96unnk_6744,Reale 1,ElevenLabs 1,Reale Molto Meglio
+utente_mc96unnk_6744,Grenoble 6,ElevenLabs 6,Grenoble Peggio
+utente_mc96unnk_6744,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc96unnk_6744,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mc96unnk_6744,ElevenLabs 7,Grenoble 7,Grenoble Peggio
+utente_mc96unnk_6744,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mc96unnk_6744,Grenoble 4,ElevenLabs 4,Grenoble Meglio
+utente_mc96unnk_6744,Grenoble 8,ElevenLabs 8,Grenoble Meglio
+utente_mc96unnk_6744,ElevenLabs 2,Reale 2,Reale Molto Meglio
+utente_mc96unnk_6744,Reale 3,ElevenLabs 3,Reale Molto Meglio
+utente_mc96vq1q_3553,ElevenLabs 3,Grenoble 3,Grenoble Peggio
+utente_mc96vq1q_3553,Grenoble 10,ElevenLabs 10,Grenoble Peggio
+utente_mc96vq1q_3553,ElevenLabs 4,Reale 4,Reale Molto Meglio
+utente_mc96vq1q_3553,ElevenLabs 5,Grenoble 5,Grenoble Peggio
+utente_mc96vq1q_3553,ElevenLabs 7,Grenoble 7,Grenoble Peggio
+utente_mc96vq1q_3553,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc96vq1q_3553,ElevenLabs 9,Grenoble 9,Grenoble Peggio
+utente_mc96vq1q_3553,Grenoble 8,ElevenLabs 8,Grenoble Molto Meglio
+utente_mc96vq1q_3553,ElevenLabs 1,Grenoble 1,Grenoble Molto Peggio
+utente_mc96vq1q_3553,ElevenLabs 2,Reale 2,B meglio
+utente_mc96vq1q_3553,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc96vq1q_3553,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mc96vq1q_3553,Reale 1,ElevenLabs 1,Uguale
+utente_mc96vq1q_3553,Grenoble 6,ElevenLabs 6,Grenoble Peggio
+utente_mc96vq1q_3553,Reale 3,ElevenLabs 3,Reale Molto Meglio
+utente_mc96vq1q_3553,Grenoble 2,ElevenLabs 2,Grenoble Peggio
+utente_mc96vq1q_3553,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mc96vq1q_3553,Grenoble 4,ElevenLabs 4,Grenoble Peggio
+utente_mc96vq1q_3553,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mc96vq1q_3553,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mc96wjk8_3550,ElevenLabs 3,Grenoble 3,Grenoble Peggio
+utente_mc96wjk8_3550,Grenoble 10,ElevenLabs 10,Grenoble Peggio
+utente_mc96wjk8_3550,ElevenLabs 4,Reale 4,Reale Molto Meglio
+utente_mc96wjk8_3550,ElevenLabs 5,Grenoble 5,Grenoble Peggio
+utente_mc96wjk8_3550,ElevenLabs 7,Grenoble 7,Grenoble Peggio
+utente_mc96wjk8_3550,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc96wjk8_3550,ElevenLabs 9,Grenoble 9,Grenoble Peggio
+utente_mc96wjk8_3550,Grenoble 8,ElevenLabs 8,Grenoble Meglio
+utente_mc96wjk8_3550,ElevenLabs 1,Grenoble 1,Grenoble Molto Peggio
+utente_mc96wjk8_3550,ElevenLabs 2,Reale 2,B meglio
+utente_mc96wjk8_3550,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc96wjk8_3550,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mc96wjk8_3550,Reale 1,ElevenLabs 1,Reale Molto Meglio
+utente_mc96wjk8_3550,Grenoble 6,ElevenLabs 6,Grenoble Peggio
+utente_mc96wjk8_3550,Reale 3,ElevenLabs 3,Reale Molto Meglio
+utente_mc96wjk8_3550,Grenoble 2,ElevenLabs 2,Grenoble Peggio
+utente_mc96wjk8_3550,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mc96wjk8_3550,Grenoble 4,ElevenLabs 4,Grenoble Peggio
+utente_mc96wjk8_3550,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mc96wjk8_3550,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mc96x8vg_2747,Grenoble 10,ElevenLabs 10,Grenoble Peggio
+utente_mc96x8vg_2747,Grenoble 6,ElevenLabs 6,Grenoble Peggio
+utente_mc96x8vg_2747,ElevenLabs 4,Reale 4,Uguale
+utente_mc96x8vg_2747,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc96x8vg_2747,Reale 1,ElevenLabs 1,B meglio
+utente_mc96x8vg_2747,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mc96x8vg_2747,ElevenLabs 2,Reale 2,Reale Molto Meglio
+utente_mc96x8vg_2747,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mc96x8vg_2747,Grenoble 2,ElevenLabs 2,Grenoble Peggio
+utente_mc96x8vg_2747,ElevenLabs 7,Grenoble 7,Grenoble Peggio
+utente_mc96x8vg_2747,Reale 3,ElevenLabs 3,A meglio
+utente_mc96x8vg_2747,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mc96x8vg_2747,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc96x8vg_2747,ElevenLabs 3,Grenoble 3,Grenoble Meglio
+utente_mc96x8vg_2747,Grenoble 4,ElevenLabs 4,Grenoble Meglio
+utente_mc96x8vg_2747,ElevenLabs 9,Grenoble 9,Grenoble Molto Peggio
+utente_mc96x8vg_2747,ElevenLabs 5,Grenoble 5,Uguale
+utente_mc96x8vg_2747,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mc96x8vg_2747,Grenoble 8,ElevenLabs 8,Grenoble Meglio
+utente_mc96x8vg_2747,ElevenLabs 1,Grenoble 1,Grenoble Peggio
+utente_mc96y1nt_6490,ElevenLabs 5,Grenoble 5,Grenoble Peggio
+utente_mc96y1nt_6490,ElevenLabs 1,Grenoble 1,Grenoble Peggio
+utente_mc96y1nt_6490,Grenoble 2,ElevenLabs 2,Uguale
+utente_mc96y1nt_6490,ElevenLabs 9,Grenoble 9,Grenoble Peggio
+utente_mc96y1nt_6490,ElevenLabs 4,Reale 4,Reale Molto Meglio
+utente_mc96y1nt_6490,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mc96y1nt_6490,ElevenLabs 3,Grenoble 3,Uguale
+utente_mc96y1nt_6490,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc96y1nt_6490,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mc96y1nt_6490,Grenoble 10,ElevenLabs 10,Grenoble Peggio
+utente_mc96y1nt_6490,Reale 1,ElevenLabs 1,Reale Molto Meglio
+utente_mc96y1nt_6490,Grenoble 6,ElevenLabs 6,Grenoble Peggio
+utente_mc96y1nt_6490,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc96y1nt_6490,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mc96y1nt_6490,ElevenLabs 7,Grenoble 7,Grenoble Peggio
+utente_mc96y1nt_6490,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mc96y1nt_6490,Grenoble 4,ElevenLabs 4,Grenoble Peggio
+utente_mc96y1nt_6490,Grenoble 8,ElevenLabs 8,Uguale
+utente_mc96y1nt_6490,ElevenLabs 2,Reale 2,Reale Molto Meglio
+utente_mc96y1nt_6490,Reale 3,ElevenLabs 3,Reale Molto Meglio
+utente_mc98p6xp_4414,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mc98p6xp_4414,Reale 3,ElevenLabs 3,Reale Molto Meglio
+utente_mc98p6xp_4414,Grenoble 2,ElevenLabs 2,Grenoble Peggio
+utente_mc98p6xp_4414,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc98p6xp_4414,ElevenLabs 1,Grenoble 1,Uguale
+utente_mc98p6xp_4414,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mc98p6xp_4414,Grenoble 6,ElevenLabs 6,Grenoble Peggio
+utente_mc98p6xp_4414,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mc98p6xp_4414,ElevenLabs 4,Reale 4,B meglio
+utente_mc98p6xp_4414,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc98p6xp_4414,ElevenLabs 5,Grenoble 5,Uguale
+utente_mc98p6xp_4414,ElevenLabs 9,Grenoble 9,Uguale
+utente_mc98p6xp_4414,ElevenLabs 7,Grenoble 7,Uguale
+utente_mc98p6xp_4414,ElevenLabs 3,Grenoble 3,Grenoble Meglio
+utente_mc98p6xp_4414,Reale 1,ElevenLabs 1,Reale Molto Meglio
+utente_mc98p6xp_4414,Grenoble 4,ElevenLabs 4,Uguale
+utente_mc98p6xp_4414,ElevenLabs 2,Reale 2,Reale Molto Meglio
+utente_mc98p6xp_4414,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mc98p6xp_4414,Grenoble 10,ElevenLabs 10,Uguale
+utente_mc98p6xp_4414,Grenoble 8,ElevenLabs 8,Uguale
+utente_mc98y4zi_4270,ElevenLabs 1,Grenoble 1,Grenoble Peggio
+utente_mc98y4zi_4270,ElevenLabs 2,Reale 2,B meglio
+utente_mc98y4zi_4270,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mc98y4zi_4270,ElevenLabs 5,Grenoble 5,Grenoble Meglio
+utente_mc98y4zi_4270,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc98y4zi_4270,Grenoble 10,ElevenLabs 10,Uguale
+utente_mc98y4zi_4270,Reale 2,Grenoble Danneggiata 2,A meglio
+utente_mc98y4zi_4270,Grenoble 2,ElevenLabs 2,Grenoble Peggio
+utente_mc98y4zi_4270,Reale 5,ElevenLabs 5,A meglio
+utente_mc98y4zi_4270,Grenoble 6,ElevenLabs 6,Uguale
+utente_mc98y4zi_4270,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc98y4zi_4270,Grenoble 8,ElevenLabs 8,Uguale
+utente_mc98y4zi_4270,Grenoble 4,ElevenLabs 4,Grenoble Peggio
+utente_mc98y4zi_4270,ElevenLabs 9,Grenoble 9,Uguale
+utente_mc98y4zi_4270,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mc98y4zi_4270,Reale 1,ElevenLabs 1,Reale Molto Meglio
+utente_mc98y4zi_4270,ElevenLabs 3,Grenoble 3,Uguale
+utente_mc98y4zi_4270,Reale 3,ElevenLabs 3,Reale Molto Meglio
+utente_mc98y4zi_4270,ElevenLabs 4,Reale 4,Reale Molto Meglio
+utente_mc98y4zi_4270,ElevenLabs 7,Grenoble 7,Uguale
+utente_mc99ttm5_3270,ElevenLabs 1,Grenoble 1,Grenoble Peggio
+utente_mc99ttm5_3270,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc99ttm5_3270,ElevenLabs 9,Grenoble 9,Grenoble Meglio
+utente_mc99ttm5_3270,Reale 2,Grenoble Danneggiata 2,A meglio
+utente_mc99ttm5_3270,ElevenLabs 3,Grenoble 3,Grenoble Peggio
+utente_mc99ttm5_3270,Grenoble 8,ElevenLabs 8,Grenoble Meglio
+utente_mc99ttm5_3270,Grenoble 2,ElevenLabs 2,Grenoble Meglio
+utente_mc99ttm5_3270,Reale 3,ElevenLabs 3,A meglio
+utente_mc99ttm5_3270,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mc99ttm5_3270,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc99ttm5_3270,Reale 1,ElevenLabs 1,Reale Molto Meglio
+utente_mc99ttm5_3270,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mc99ttm5_3270,ElevenLabs 5,Grenoble 5,Grenoble Molto Peggio
+utente_mc99ttm5_3270,Grenoble 6,ElevenLabs 6,Uguale
+utente_mc99ttm5_3270,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mc99ttm5_3270,Grenoble 10,ElevenLabs 10,Grenoble Molto Meglio
+utente_mc99ttm5_3270,ElevenLabs 2,Reale 2,Reale Molto Meglio
+utente_mc99ttm5_3270,ElevenLabs 4,Reale 4,Reale Molto Meglio
+utente_mc99ttm5_3270,ElevenLabs 7,Grenoble 7,Grenoble Meglio
+utente_mc99ttm5_3270,Grenoble 4,ElevenLabs 4,Grenoble Peggio
+utente_mc9h0k76_8718,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc9h0k76_8718,ElevenLabs 3,Grenoble 3,Grenoble Meglio
+utente_mc9h0k76_8718,ElevenLabs 1,Grenoble 1,Grenoble Peggio
+utente_mc9h0k76_8718,ElevenLabs 9,Grenoble 9,Grenoble Meglio
+utente_mc9h0k76_8718,Reale 1,ElevenLabs 1,B meglio
+utente_mc9h0k76_8718,Grenoble Danneggiata 3,Reale 3,B meglio
+utente_mc9h0k76_8718,Reale 5,ElevenLabs 5,A meglio
+utente_mc9h0k76_8718,Grenoble 2,ElevenLabs 2,Grenoble Meglio
+utente_mc9h0k76_8718,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mc9h0k76_8718,Grenoble 6,ElevenLabs 6,Grenoble Meglio
+utente_mc9h0k76_8718,Grenoble 10,ElevenLabs 10,Grenoble Meglio
+utente_mc9h0k76_8718,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mc9h0k76_8718,ElevenLabs 4,Reale 4,Reale Molto Meglio
+utente_mc9h0k76_8718,ElevenLabs 2,Reale 2,Reale Molto Meglio
+utente_mc9h0k76_8718,Reale 3,ElevenLabs 3,Reale Molto Meglio
+utente_mc9h0k76_8718,ElevenLabs 5,Grenoble 5,Grenoble Meglio
+utente_mc9h0k76_8718,ElevenLabs 7,Grenoble 7,Grenoble Peggio
+utente_mc9h0k76_8718,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc9h0k76_8718,Grenoble 4,ElevenLabs 4,Grenoble Meglio
+utente_mc9h0k76_8718,Grenoble 8,ElevenLabs 8,Grenoble Meglio
+utente_mc9hj6m7_9714,ElevenLabs 3,Grenoble 3,Grenoble Peggio
+utente_mc9hj6m7_9714,ElevenLabs 1,Grenoble 1,Grenoble Peggio
+utente_mc9hj6m7_9714,ElevenLabs 5,Grenoble 5,Grenoble Peggio
+utente_mc9hj6m7_9714,Grenoble Danneggiata 1,Reale 1,B meglio
+utente_mc9hj6m7_9714,Reale 1,ElevenLabs 1,B meglio
+utente_mc9hj6m7_9714,Reale 5,ElevenLabs 5,B meglio
+utente_mc9hj6m7_9714,Grenoble 10,ElevenLabs 10,Grenoble Peggio
+utente_mc9hj6m7_9714,ElevenLabs 7,Grenoble 7,Grenoble Molto Peggio
+utente_mc9hj6m7_9714,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc9hj6m7_9714,Grenoble 4,ElevenLabs 4,Grenoble Molto Peggio
+utente_mc9hj6m7_9714,Grenoble 8,ElevenLabs 8,Grenoble Molto Peggio
+utente_mc9hj6m7_9714,Grenoble 6,ElevenLabs 6,Grenoble Molto Peggio
+utente_mc9hj6m7_9714,Grenoble 2,ElevenLabs 2,Grenoble Molto Peggio
+utente_mc9hj6m7_9714,ElevenLabs 4,Reale 4,Reale Molto Meglio
+utente_mc9hj6m7_9714,ElevenLabs 9,Grenoble 9,Grenoble Peggio
+utente_mc9hj6m7_9714,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc9hj6m7_9714,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mc9hj6m7_9714,ElevenLabs 2,Reale 2,Reale Molto Meglio
+utente_mc9hj6m7_9714,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mc9hj6m7_9714,Reale 3,ElevenLabs 3,Reale Molto Meglio
+utente_mc9ksaly_0484,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mc9ksaly_0484,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mc9ksaly_0484,ElevenLabs 5,Grenoble 5,Grenoble Peggio
+utente_mc9ksaly_0484,Reale 3,ElevenLabs 3,Uguale
+utente_mc9ksaly_0484,Grenoble 8,ElevenLabs 8,Grenoble Meglio
+utente_mc9ksaly_0484,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mc9ksaly_0484,ElevenLabs 1,Grenoble 1,Grenoble Peggio
+utente_mc9ksaly_0484,ElevenLabs 7,Grenoble 7,Grenoble Peggio
+utente_mc9ksaly_0484,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mc9ksaly_0484,ElevenLabs 9,Grenoble 9,Grenoble Peggio
+utente_mc9ksaly_0484,ElevenLabs 3,Grenoble 3,Grenoble Peggio
+utente_mc9ksaly_0484,Grenoble 6,ElevenLabs 6,Grenoble Molto Peggio
+utente_mc9ksaly_0484,Grenoble 2,ElevenLabs 2,Grenoble Peggio
+utente_mc9ksaly_0484,Grenoble 4,ElevenLabs 4,Grenoble Meglio
+utente_mc9ksaly_0484,ElevenLabs 4,Reale 4,B meglio
+utente_mc9ksaly_0484,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mc9ksaly_0484,ElevenLabs 2,Reale 2,Reale Molto Meglio
+utente_mc9ksaly_0484,Reale 1,ElevenLabs 1,Uguale
+utente_mc9ksaly_0484,Grenoble 10,ElevenLabs 10,Grenoble Peggio
+utente_mc9ksaly_0484,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mcbwk2mp_6591,Grenoble 8,ElevenLabs 8,Grenoble Meglio
+utente_mcbwk2mp_6591,Reale 3,ElevenLabs 3,Reale Molto Meglio
+utente_mcbwk2mp_6591,Grenoble Danneggiata 3,Reale 3,B meglio
+utente_mcbwk2mp_6591,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mcbwk2mp_6591,ElevenLabs 7,Grenoble 7,Grenoble Meglio
+utente_mcbwk2mp_6591,ElevenLabs 3,Grenoble 3,Grenoble Meglio
+utente_mcbwk2mp_6591,Grenoble 2,ElevenLabs 2,Grenoble Meglio
+utente_mcbwk2mp_6591,ElevenLabs 5,Grenoble 5,Grenoble Molto Meglio
+utente_mcbwk2mp_6591,Grenoble 4,ElevenLabs 4,Grenoble Peggio
+utente_mcbwk2mp_6591,Reale 2,Grenoble Danneggiata 2,A meglio
+utente_mcbwk2mp_6591,Grenoble 10,ElevenLabs 10,Grenoble Molto Meglio
+utente_mcbwk2mp_6591,Reale 1,ElevenLabs 1,B meglio
+utente_mcbwk2mp_6591,ElevenLabs 9,Grenoble 9,Grenoble Meglio
+utente_mcbwk2mp_6591,Grenoble 6,ElevenLabs 6,Grenoble Peggio
+utente_mcbwk2mp_6591,ElevenLabs 2,Reale 2,Reale Molto Meglio
+utente_mcbwk2mp_6591,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mcbwk2mp_6591,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mcbwk2mp_6591,ElevenLabs 4,Reale 4,Reale Molto Meglio
+utente_mcbwk2mp_6591,ElevenLabs 1,Grenoble 1,Grenoble Peggio
+utente_mcbwk2mp_6591,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mcbx2qan_4587,Grenoble 4,ElevenLabs 4,Grenoble Meglio
+utente_mcbx2qan_4587,ElevenLabs 9,Grenoble 9,Grenoble Meglio
+utente_mcbx2qan_4587,ElevenLabs 4,Reale 4,Reale Molto Meglio
+utente_mcbx2qan_4587,Grenoble Danneggiata 3,Reale 3,B meglio
+utente_mcbx2qan_4587,Grenoble 8,ElevenLabs 8,Grenoble Meglio
+utente_mcbx2qan_4587,ElevenLabs 5,Grenoble 5,Grenoble Molto Meglio
+utente_mcbx2qan_4587,Reale 3,ElevenLabs 3,B molto meglio
+utente_mcbx2qan_4587,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mcbx2qan_4587,Grenoble 2,ElevenLabs 2,Grenoble Peggio
+utente_mcbx2qan_4587,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mcbx2qan_4587,ElevenLabs 7,Grenoble 7,Grenoble Peggio
+utente_mcbx2qan_4587,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mcbx2qan_4587,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mcbx2qan_4587,ElevenLabs 2,Reale 2,Reale Molto Meglio
+utente_mcbx2qan_4587,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mcbx2qan_4587,ElevenLabs 1,Grenoble 1,Grenoble Peggio
+utente_mcbx2qan_4587,Grenoble 6,ElevenLabs 6,Grenoble Molto Peggio
+utente_mcbx2qan_4587,ElevenLabs 3,Grenoble 3,Grenoble Peggio
+utente_mcbx2qan_4587,Grenoble 10,ElevenLabs 10,Grenoble Meglio
+utente_mcbx2qan_4587,Reale 1,ElevenLabs 1,Reale Molto Meglio
+utente_mcbxp96z_7159,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio
+utente_mcbxp96z_7159,ElevenLabs 1,Grenoble 1,Grenoble Molto Peggio
+utente_mcbxp96z_7159,ElevenLabs 5,Grenoble 5,Uguale
+utente_mcbxp96z_7159,Grenoble 10,ElevenLabs 10,Uguale
+utente_mcbxp96z_7159,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mcbxp96z_7159,Grenoble 8,ElevenLabs 8,Uguale
+utente_mcbxp96z_7159,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mcbxp96z_7159,Grenoble 6,ElevenLabs 6,Grenoble Peggio
+utente_mcbxp96z_7159,Grenoble 2,ElevenLabs 2,Grenoble Peggio
+utente_mcbxp96z_7159,ElevenLabs 3,Grenoble 3,Uguale
+utente_mcbxp96z_7159,Reale 3,ElevenLabs 3,B meglio
+utente_mcbxp96z_7159,Grenoble 4,ElevenLabs 4,Uguale
+utente_mcbxp96z_7159,ElevenLabs 2,Reale 2,Reale Molto Meglio
+utente_mcbxp96z_7159,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mcbxp96z_7159,Reale 1,ElevenLabs 1,Uguale
+utente_mcbxp96z_7159,ElevenLabs 9,Grenoble 9,Grenoble Meglio
+utente_mcbxp96z_7159,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mcbxp96z_7159,ElevenLabs 7,Grenoble 7,Grenoble Peggio
+utente_mcbxp96z_7159,ElevenLabs 4,Reale 4,Uguale
+utente_mcbxp96z_7159,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mcbyc2v4_2494,Grenoble 2,ElevenLabs 2,Uguale
+utente_mcbyc2v4_2494,Reale 4,Grenoble Danneggiata 4,Reale Molto Meglio
+utente_mcbyc2v4_2494,ElevenLabs 4,Reale 4,Reale Molto Meglio
+utente_mcbyc2v4_2494,ElevenLabs 9,Grenoble 9,Uguale
+utente_mcbyc2v4_2494,Reale 3,ElevenLabs 3,Reale Molto Meglio
+utente_mcbyc2v4_2494,Grenoble 8,ElevenLabs 8,Grenoble Peggio
+utente_mcbyc2v4_2494,Grenoble Danneggiata 5,Reale 5,Reale Molto Meglio
+utente_mcbyc2v4_2494,Reale 2,Grenoble Danneggiata 2,Reale Molto Meglio
+utente_mcbyc2v4_2494,ElevenLabs 7,Grenoble 7,Grenoble Peggio
+utente_mcbyc2v4_2494,Grenoble 10,ElevenLabs 10,Grenoble Peggio
+utente_mcbyc2v4_2494,Grenoble Danneggiata 1,Reale 1,Reale Molto Meglio
+utente_mcbyc2v4_2494,ElevenLabs 3,Grenoble 3,Grenoble Peggio
+utente_mcbyc2v4_2494,ElevenLabs 2,Reale 2,Reale Molto Meglio
+utente_mcbyc2v4_2494,ElevenLabs 5,Grenoble 5,Grenoble Peggio
+utente_mcbyc2v4_2494,Reale 1,ElevenLabs 1,Uguale
+utente_mcbyc2v4_2494,Reale 5,ElevenLabs 5,Reale Molto Meglio
+utente_mcbyc2v4_2494,Grenoble 4,ElevenLabs 4,Grenoble Molto Peggio
+utente_mcbyc2v4_2494,Grenoble 6,ElevenLabs 6,Grenoble Molto Peggio
+utente_mcbyc2v4_2494,ElevenLabs 1,Grenoble 1,Grenoble Peggio
+utente_mcbyc2v4_2494,Grenoble Danneggiata 3,Reale 3,Reale Molto Meglio

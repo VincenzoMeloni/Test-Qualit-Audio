@@ -17,6 +17,7 @@ body {
     margin-top: 30px;
     font-size: 2rem;
     text-align: center;
+    font-style: italic;
     color: #333;
     font-weight: bold;
     letter-spacing: 1px;
@@ -33,10 +34,16 @@ body {
     animation: fadeInUp 1s ease-out forwards;
 }
 
+#rettangolo:hover{
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 h1 {
     margin: 0;
     font-size: 2rem;
     font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1px;
 }
 
 #progressText{
@@ -149,6 +156,16 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.A:hover{
+    transform: translateX(-75%) translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.B:hover{
+    transform: translateX(75%) translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);    
+}
+
 .A {
     transform: translateX(-75%);
 }
@@ -172,6 +189,11 @@ h1 {
 .audio-container audio {
     width: 100%;
     max-width: 250px;
+}
+
+input:hover{
+    cursor:pointer;
+    background-color: black;
 }
 
 .final-message {

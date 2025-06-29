@@ -10,9 +10,9 @@ export const Validazione = (req, res, next) => {
 
 
 export const ValidaForm = (req,res,next) =>{
-  const { utente, regioneNascita, regioneResidenza, genere, titoloStudio } = req.body;
+  const { utente, regioneNascita, regioneResidenza, eta, genere, titoloStudio } = req.body;
 
-  if ( !utente || !regioneNascita || !regioneResidenza || !genere || !titoloStudio) {
+  if ( !utente || !regioneNascita || !regioneResidenza || !eta || !genere || !titoloStudio) {
     return res.status(400).json({ message: 'Dati incompleti' });
   }
 

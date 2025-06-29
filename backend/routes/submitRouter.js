@@ -52,6 +52,8 @@ router.get('/', (_req, res) => {
  *                 type: string
  *               regioneResidenza:
  *                 type: string
+ *               eta:
+ *                 type: number
  *               genere:
  *                 type: string
  *               titoloStudio:
@@ -66,10 +68,10 @@ router.get('/', (_req, res) => {
  */
 
 router.post('/submitDati', ValidaForm , async (req,res) =>{
-  const { utente ,regioneNascita, regioneResidenza, genere, titoloStudio } = req.body;
+  const { utente ,regioneNascita, regioneResidenza, eta, genere, titoloStudio } = req.body;
 
   try{
-    await writeUserDataCSV({utente, regioneNascita,regioneResidenza,genere,titoloStudio});
+    await writeUserDataCSV({utente, regioneNascita, eta, regioneResidenza,genere,titoloStudio});
     res.status(200).json({ message: 'Dati utente ricevuti e salvati con successo!' });
   } catch (err){
     res.status(500).json({ message: 'Errore nel salvataggio dei dati.' });
