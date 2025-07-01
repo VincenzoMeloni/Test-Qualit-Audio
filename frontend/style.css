@@ -252,6 +252,10 @@ button#toStart:hover{
         margin-bottom: 10px;
     }
 
+    .A:hover,.B:hover{
+        transform: none;
+    }
+
     .row {
         justify-content: space-between;
         align-items: center;
